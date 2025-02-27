@@ -111,7 +111,7 @@ function buyWeapon() {
       text.innerText = "You do not have enough gold to buy a weapon.";
     }
   } else {
-    console.log("You have all the weapons.");
+    text.innerText = "You already have the most powerful weapon!";
   }
   console.log(weapons.length - 1);
   console.log(currentWeaponIndex);
