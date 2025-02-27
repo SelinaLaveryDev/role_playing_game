@@ -119,6 +119,11 @@ function buyWeapon() {
   console.log(currentWeaponIndex);
 }
 
+function sellWeapon() {
+  if (inventory.length > 1) {
+  }
+}
+
 function fightSlime() {}
 
 function fightBeast() {}
