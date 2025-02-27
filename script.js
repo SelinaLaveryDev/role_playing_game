@@ -150,6 +150,11 @@ function sellWeapon() {
   }
 }
 
-function fightSlime() {}
+function fightSlime() {
+  fighting = 0;
+  goFight();
+}
 
 function fightBeast() {}
+
+function goFight() {}
