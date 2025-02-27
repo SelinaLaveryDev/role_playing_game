@@ -1,7 +1,7 @@
 // Variables
 let xp = 0;
 let health = 100;
-let gold = 50;
+let gold = 250;
 let currentWeaponIndex = 0;
 let fighting;
 let monsterHealth;
@@ -98,7 +98,7 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-  if (currentWeaponIndex < 3) {
+  if (currentWeaponIndex < weapons.length - 1) {
     if (gold >= 30) {
       gold -= 30;
       currentWeaponIndex++;
@@ -110,7 +110,11 @@ function buyWeapon() {
     } else {
       text.innerText = "You do not have enough gold to buy a weapon.";
     }
+  } else {
+    console.log("You have all the weapons.");
   }
+  console.log(weapons.length - 1);
+  console.log(currentWeaponIndex);
 }
 
 function fightSlime() {}
