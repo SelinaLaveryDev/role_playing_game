@@ -167,7 +167,9 @@ function fightDragon() {
   goFight();
 }
 
-function goFight() {}
+function goFight() {
+  update(location[3]);
+}
 
 function attack() {}
 function dodge() {}
