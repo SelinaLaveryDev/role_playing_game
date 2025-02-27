@@ -84,7 +84,7 @@ const locations = [
       "Go to town square",
     ],
     "button functions": [goTown, goTown, goTown],
-    text: "The monster screams Arg! as it dies. You gain experience points and find gold.",
+    text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
   },
 ];
 
@@ -96,6 +96,7 @@ button3.onclick = fightDragon;
 // functions
 
 function update(location) {
+  monsterStats.style.display = "none";
   button1.innerText = location["button text"][0];
   button2.innerText = location["button text"][1];
   button3.innerText = location["button text"][2];
