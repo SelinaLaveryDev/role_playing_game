@@ -106,3 +106,7 @@ function buyWeapon() {
     text.innerText = "You now have a new weapon.";
   }
 }
+
+function fightSlime() {}
+
+function fightBeast() {}
