@@ -219,8 +219,10 @@ function attack() {
       defeatMonster();
     }
   }
-  if (Math.random() > 0.1) {
+  if (Math.random() > 0.1 && inventory.length !== 1) {
+    // here the player has a 10% chance of breaking their weapon
     text.innerText += " Your " + inventory(pop) + " breaks.";
+    currentWeaponIndex--;
   }
 }
 
