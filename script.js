@@ -227,6 +227,10 @@ function getMonsterAttackValue(level) {
   return hit > 0 ? hit : 0;
 }
 
+function isMonsterHit() {
+  return Math.random() > 0.2 || health < 20; // here the player has a 20% chance of dodging the attack this is worked out by the random number being greater than 0.2, if the player has less than 20 health they have a 100% chance of dodging the attack, however if the player has more than 20 health they have a 20% chance of dodging the attack because the random number will be greater than 0.2 80% of the time
+}
+
 function dodge() {
   text.innerText =
     "You dodge the attack from the " + monsters[fighting].name + ".";
